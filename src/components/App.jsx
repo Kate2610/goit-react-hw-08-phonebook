@@ -7,6 +7,8 @@ import { useFetchCurrentUserQuery } from 'redux/api';
 import { useSelector } from 'react-redux';
 import { getToken } from 'redux/authUser/authSelectors';
 import { MainSpinner } from './MainSpinner/MainSpinner';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Home = lazy(() => import('pages/Home'));
 const ContactsPage = lazy(() => import('pages/ContactsPage'));
@@ -24,6 +26,7 @@ export const App = () => {
 
   return !isFetching ? (
     <Suspense fallback={<></>}>
+      <ToastContainer />
       <Routes>
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<Home />} />
@@ -34,9 +37,8 @@ export const App = () => {
           </Route>
 
           <Route path="contacts" element={<PrivateRoute />}>
-            <Route path="/contacts" element={<ContactsPage />}>
-              <Route path="edit/:contactId" element={<EditContactModal />} />
-            </Route>
+            <Route path="/contacts" element={<ContactsPage />} />
+            <Route path="/contacts/edit/:contactId" element={<EditContactModal />} />
           </Route>
 
           <Route path="*" element={<NotFoundPage />} />

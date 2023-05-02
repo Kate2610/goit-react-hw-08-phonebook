@@ -26,7 +26,7 @@ export const UserMenu = () => {
         marginLeft: 'auto',
       }}
     >
-      <Typography component="span" sx={{}}>
+      <Typography component="span" sx={{fontWeight: 'bold'}}>
         Welcome, {userName}
       </Typography>
 
@@ -37,6 +37,7 @@ export const UserMenu = () => {
         sx={{
           marginLeft: '15px',
           color: 'black',
+          
 
           '&:hover': {
             bgcolor: '#f0b515',

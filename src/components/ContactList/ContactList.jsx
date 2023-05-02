@@ -50,7 +50,7 @@ const ContactList = () => {
         </>
       )}
 
-      {isError && <li>Ups, something was wrong! Reload page, please</li>}
+      {isError && <li>Oops, something was wrong! Reload page, please</li>}
     </Box>
   );
 };

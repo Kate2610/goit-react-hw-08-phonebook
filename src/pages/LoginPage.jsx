@@ -84,7 +84,7 @@ const LoginPage = () => {
             component="form"
             noValidate
             onSubmit={handleSubitLogIn}
-            sx={{ mt: 3 }}
+            sx={{ mt: 3, }}
           >
             <Grid container spacing={2}>
               <Grid item xs={12}>
@@ -118,7 +118,7 @@ const LoginPage = () => {
               type="submit"
               fullWidth
               variant="contained"
-              sx={{ mt: 3, mb: 2 }}
+              sx={{ mt: 3, mb: 2, bgcolor: 'purple' }}
             >
               Sign In
             </Button>

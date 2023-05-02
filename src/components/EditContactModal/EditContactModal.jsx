@@ -79,7 +79,7 @@ const EditContactModal = () => {
             </Grid>
           </Grid>
 
-          <Button type="submit" fullWidth variant="contained" sx={{ mt: 3 }}>
+          <Button type="submit" fullWidth variant="contained" sx={{ mt: 3, backgroundColor: 'purple' }}>
             Edit contact
           </Button>
         </Box>

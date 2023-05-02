@@ -26,6 +26,7 @@ const Home = () => {
           fontSize: `${matches ? '60px' : '48px'}`,
           textAlign: 'center',
           marginBottom: 3,
+          
         }}
       >
         Welcome to PhoneBook!
@@ -35,8 +36,14 @@ const Home = () => {
         type="button"
         variant="contained"
         size="large"
+        sx={{
+          backgroundColor:  'purple',
+          
+        }}
+        
         onClick={() => {
           navigate('/register');
+          
         }}
       >
         Get started

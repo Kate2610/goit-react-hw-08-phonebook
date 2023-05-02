@@ -63,14 +63,14 @@ export const useEditContactModal = () => {
 
   useEffect(() => {
     if (isSuccess) {
-      showSuccess('Contact update');
+      showSuccess('Contact is updated');
       navigate('/contacts');
     }
   }, [isSuccess, navigate]);
 
   useEffect(() => {
     if (isError) {
-      showError(`Ups! Something was wrong`);
+      showError(`Oops! Something went wrong`);
     }
   }, [isError]);
 

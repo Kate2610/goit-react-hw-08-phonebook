@@ -83,7 +83,7 @@ export const ContactForm = () => {
             disabled={name.length < 3}
             fullWidth
             variant="contained"
-            sx={{ mt: 3 }}
+            sx={{ mt: 3, backgroundColor: 'purple' }}
           >
             Add contact {isLoading && <Spinner size={20} />}
           </Button>

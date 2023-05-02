@@ -8,6 +8,7 @@ import Box from '@mui/material/Box';
 import { setFilter } from 'redux/contacts/contactsSlice';
 import { getFilter } from 'redux/contacts/contactsSelectors';
 
+
 const Filter = () => {
   const dispatch = useDispatch();
   const filter = useSelector(getFilter);
