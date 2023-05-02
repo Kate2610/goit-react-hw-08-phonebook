@@ -73,7 +73,7 @@ const RegisterPage = () => {
             alignItems: 'center',
           }}
         >
-          <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
+          <Avatar sx={{ m: 1, bgcolor:  'purple'}}>
             <LockOutlinedIcon />
           </Avatar>
 
